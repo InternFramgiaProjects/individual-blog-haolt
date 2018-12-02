@@ -4,8 +4,12 @@
 		<title>MAKE IT AWESOME - HAOLT</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<!-- <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.css"> -->
-		<!-- <link rel="stylesheet" href="assets/css/fontawesome.css"> -->
+		<!-- control the page's dimensions + scaling based on the device  -->
+		<meta name="application-name" content="Jōnetsu">
+		<meta name="author" content="Hao Le">
+		<meta name="description" content="Blog shares knowledge">
+		<meta name="keywords" content="photo, coding">
+		<link rel="icon" type="image/png" href="assets/images/favicon.png">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -19,16 +23,16 @@
 				<div class="float-right">
 					<form id="search-form">
 						<div class="form-group">
-							<input type="text" name="keywords" id="keywords" placeholder="Type input ..."/>
+							<input type="text" name="keywords" id="keywords" placeholder="Type your keyword ..."/>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</div>
 					</form>
-					<img src="assets/images/logo.gif" alt="totochan" width="75px" height="75px"/>
+				<img src="assets/images/search.png" alt="search_icon"/>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</header>
-		<nav class="main-nav">
+		<nav role="navigation" class="main-nav">
 			<ul class="main-menu">
 				<li class="main-menu__item">
 					<a href="#home">
@@ -49,36 +53,74 @@
 					</a>
 				</li>
 				<li class="main-menu__item">
+					<a href="#photography">
+						<img src="assets/images/camera.png" alt="camera">
+						<span class="item-title">PHOTOS</span>
+					</a>
+				</li>
+				<li class="main-menu__item">
 					<a href="#book-review">
 						<img src="assets/images/book.png" alt="book">
 						<span class="item-title">BOOKS</span>
 					</a>
 				</li>
 				<li class="main-menu__item">
-					<a href="#photography">
-						<img src="assets/images/camera.png" alt="camera">
-						<span class="item-title">PHOTOGRAPHY</span>
-					</a>
-				</li>
-				<li class="main-menu__item">
 					<a href="#about-me">
 						<img src="assets/images/aboutme.png" alt="aboutme">
-						<span class="item-title">ME</span>
+						<span class="item-title">AUTHOR</span>
 					</a>
 				</li>
 			</ul>
 		</nav>
 		<div class="container" id="all-site-wrap">
 			<section id="home">
+				<img src="assets/images/favicon.png" alt="logoJonestu">
 				<h1 id="home__title">Jōnetsu!</h1>
 				<hr/>
 				<p class="home__sub-title">Share your targets, your programming tricks, photography skills, review books</p>
-				Animation in here -__-
+				<a href="#goals" class="btn btn-primary home__btn">See more<i class="fas fa-angle-double-right"></i></a>
 			</section>
 			<section id="goals" class="field">
-				<h2 class="field__title" id="goals__title">Create your goals</h2>
+				<h2 class="field__title" id="goals__title">Motivation</h2>
 				<hr/>
-
+				<div class="row">
+					<div class="col-md-4">
+						<figure class="motivation-item">
+							<img class="motivation-item__icon" src="assets/images/motivation_1.png" alt="Trulli"/>
+							<figcaption class="motivation-item__description">Appreciate Teamwork</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4">
+						<figure class="motivation-item">
+							<img class="motivation-item__icon" src="assets/images/motivation_4.png" alt="Trulli"/>
+							<figcaption class="motivation-item__description">Think outside the box</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4">
+						<figure class="motivation-item">
+							<img class="motivation-item__icon" src="assets/images/motivation_2.png" alt="Trulli"/>
+							<figcaption class="motivation-item__description">Have get to change</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4">
+						<figure class="motivation-item">
+							<img class="motivation-item__icon" src="assets/images/motivation_5.png" alt="Trulli"/>
+							<figcaption class="motivation-item__description">Speed up</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4">
+						<figure class="motivation-item">
+							<img class="motivation-item__icon" src="assets/images/motivation_3.png" alt="Trulli"/>
+							<figcaption class="motivation-item__description">Be Professional</figcaption>
+						</figure>
+					</div>
+					<div class="col-md-4">
+						<figure class="motivation-item">
+							<img class="motivation-item__icon" src="assets/images/motivation_6.png" alt="Trulli"/>
+							<figcaption class="motivation-item__description">Focus on the point</figcaption>
+						</figure>
+					</div>
+				</div>
 			</section>
 			<section id="programming">
 				<h2>CODING NOTES</h2>
@@ -121,46 +163,84 @@
 					<li><a href="#programming"><i class="fas fa-greater-than"></i></a></li>
 				</ul>
 			</section>
-			<section id="book-review">
-				<h2>book-review,y</h2>
-			</section>
 			<section id="photography">
 				<h2>Photography</h2>
+				<hr/>
 				<div class="photography__articles">
 					<article class="ptg__article-item">
 						<img class="ptg__articles-item_img" src="https://www.shootstube.com/images/posts/lens-with-open-apperture.jpg" alt="pts1">
 						<h6 class="ptg__articles-item__title">Marok 1</h6>
-						<a href="#photography">See more></a>
 					</article>
 					<article class="ptg__article-item">
 						<img class="ptg__articles-item_img" src="https://thumbor.abcopen.net.au/ReS4g-Q4wVI59b5XqXnPrvPwfXU=/0x0:747x747/400x400/https://uploads-abcopen.s3.amazonaws.com/assets/uploads/95675.jpg" alt="pts1">
 						<h6 class="ptg__articles-item__title">Marok 1</h6>
-						<a href="#photography">See more></a>
 					</article>
 					<article class="ptg__article-item">
 						<img class="ptg__articles-item_img" src="http://terricranstoun.weebly.com/uploads/9/0/3/8/90385645/11208131-1420836901568181-18737761-n.jpg" alt="pts1">
 						<h6 class="ptg__articles-item__title">Marok 1</h6>
-						<a href="#photography">See more></a>
 					</article>
 				</div>
 				<ul class="item-pagination item-pagination--01a3a4">
-					<li><a href="#programming"><i class="fas fa-less-than"></i></a></li>
-					<li><a href="#programming">1</a></li>
-					<li><a href="#programming">2</a></li>
-					<li><a href="#programming" class="active">3</a></li>
-					<li><a href="#programming">4</a></li>
-					<li><a href="#programming"><i class="fas fa-greater-than"></i></a></li>
+					<li><a href="#photography"><i class="fas fa-less-than"></i></a></li>
+					<li><a href="#photography">1</a></li>
+					<li><a href="#photography">2</a></li>
+					<li><a href="#photography" class="active">3</a></li>
+					<li><a href="#photography">4</a></li>
+					<li><a href="#photography"><i class="fas fa-greater-than"></i></a></li>
+				</ul>
+			</section>
+			<section id="book-review">
+				<h2>Book Review</h2>
+				<hr/>
+				<div class="row">
+					<div class="col-md-4">
+						<article class="wrapper">
+							<div class="box">
+							  	<div class="card">
+									<img src="https://images.unsplash.com/photo-1472747624745-ce92d32d3c24?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=8b3c30ebeb7ff0f1730e729a4ff7d9bb" alt="">
+									<p class="title">lehaohust@gmail.com</p>
+							  	</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-4">
+						<article class="wrapper">
+							<div class="box">
+							  	<div class="card">
+									<img src="https://images.unsplash.com/photo-1472747624745-ce92d32d3c24?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=8b3c30ebeb7ff0f1730e729a4ff7d9bb" alt="">
+									<p class="title">lehaohust@gmail.com</p>
+							  	</div>
+							</div>
+						</article>
+					</div>
+					<div class="col-md-4">
+						<article class="wrapper">
+							<div class="box">
+							  	<div class="card">
+									<img src="https://images.unsplash.com/photo-1472747624745-ce92d32d3c24?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=8b3c30ebeb7ff0f1730e729a4ff7d9bb" alt="">
+									<p class="title">lehaohust@gmail.com</p>
+							  	</div>
+							</div>
+						</article>
+					</div>
+				</div>
+				<ul class="item-pagination">
+					<li><a href="#book-review"><i class="fas fa-less-than"></i></a></li>
+					<li><a href="#book-review">1</a></li>
+					<li><a href="#book-review">2</a></li>
+					<li><a href="#book-review" class="active">3</a></li>
+					<li><a href="#book-review">4</a></li>
+					<li><a href="#book-review"><i class="fas fa-greater-than"></i></a></li>
 				</ul>
 			</section>
 			<section id="about-me">
-				<h2>About me</h2>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3 text-center">
+						<div class="col-md-5 text-center">
 							<div class="basic-info">
 								<img src="assets/images/avatar.gif" alt="avatar" class="basic-info__avatar">
 								<h6 class="basic-info__name">Le Thi Hao</h6>
-								<p class="basic-info__career">Intern Frontend</p>
+								<p class="basic-info__career">Frontend Web</p>
 								<ul class="basic-info__social-profiles">
 									<li><a href="#about-me" class="fab fa-trello"></a></li>
 									<li><a href="#about-me" class="fab fa-linkedin-in"></a></li>
@@ -168,17 +248,36 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-9">
-							thyb
+						<div class="col-md-7">
+							<h2>About me</h2>
+							<hr/>
+							<address>
+								<ul class="contact-info text-left">
+									<li class="contact-info__address">
+										<img class="address__icon" src="assets/images/marker.png" alt="marker">
+										No. 06/295, Bach Mai Str., Hai Ba Trung Disc., Hanoi, Vietnam</li>
+									<li class="contact-info__tel">
+										<img class="address__icon" src="assets/images/tel.png" alt="tel">
+										0966.828.410</li>
+									<li class="contact-info__mail">
+										<img class="address__icon" src="assets/images/mail.png" alt="mail">
+										<a href="mailto:le.thi.hao@framgia.com?subject=FROM+Jōnetsu+BLOG">le.thi.hao@framgia.com</a>
+									</li>
+									<li class="contact-info__website">
+										<img class="address__icon" src="assets/images/web.png" alt="web">
+										<a href="http://haodev.wordpress.com">http://haodev.wordpress.com</a>
+									</li>
+								</ul>
+							</address>
 						</div>
 					</div>
 				</div>
 			</section>
+			<footer>
+				<p class="copyright">
+					&copy;Copyright by Haolt
+				</p>
+			</footer>
 		</div>
-		<footer>
-			<p class="copyright">
-				@Copyright by Haolt
-			</p>
-		</footer>
 	</body>
 </html>
