@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+
+    #all-site-wrap #home {
+        padding-top: 5em;
+    }
+    p.home__sub-title {
+        width: 60%;
+        margin: auto;
+    }
+    .home__btn {
+        margin: 30px;
+    }
+    .article-item:hover .article-item__title {
+        transform: translateY(-15px);
+    }
+    .item-pagination li a {
+        font-size: 15px;
+    }
+    .item-pagination li:first-child a i, .item-pagination li:last-child a i {
+        font-size: 21px;
+    }
+    ul.item-pagination {
+        margin-bottom: 0px;
+    }
+    #book-review hr {
+        margin-bottom: 0;
+    }
+    .contact-info li, .contact-info li a {
+        font-size: 20px;
+    }
+}
+@media (max-width: 414px) {
+    nav.main-nav {
+        display: none;
+    }
+    h1#home__title {
+        font-size: 2em;
+    }
+    p.home__sub-title {
+        width: 100%;
+        font-size: 18px;
+    }
+    .home__btn {
+        margin-bottom: 0;
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+    section h2 {
+        font-size: 25px;
+    }
+    #all-site-wrap section {
+        padding: 3em 0;
+    }
+    section#about-me h2 {
+        display: none;
+    }
+    .contact-info li, 
+    .contact-info li a {
+        font-size: 17px;
+        margin: 8px 0;
+    }
+}

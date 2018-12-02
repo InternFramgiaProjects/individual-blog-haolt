@@ -175,12 +175,12 @@ section article {
     flex: 1;
 }
 
-#home {
+#all-site-wrap #home {
     background: #54a0ff;
     background: #2980B9;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #54a0ff, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #FFFFFF, #6DD5FA, #54a0ff, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    padding-top: 10em;
 }
 
 #programming {
@@ -227,6 +227,7 @@ p.home__sub-title {
     padding: 8px 20px;
     border-radius: 20px;
     transition: .2s;
+    margin: 10px;
 }
 
 .home__btn i {
