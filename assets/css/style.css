@@ -513,7 +513,7 @@ ul.contact-info li i {
 }
 
 .box {
-    background: teal;
+    background: grey;
     display: inline-block;
     position: relative;
     transform: rotate(-30deg) skew(30deg) scale(.5);
