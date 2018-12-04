@@ -505,7 +505,6 @@ ul.contact-info li i {
 }
 
 .wrapper {
-    display: block;
     display: flex;
     justify-content: center;
     align-content: center;
